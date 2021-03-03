@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var x=1;
+        //애니메이션 효과를 내기 위해서는 이미지를 교체해야됨
+        function next(){
+            x=x+1;
+            //문서 내의 이미지의 src의 값을 변하게 하자!!
+            document.querySelector("img").src="../images/[안전폴더]hero-20210303T054219Z-001/hero/image"+x+".png";
+        }
+    </script>
+</head>
+<body>
+    
+    <button onclick="next()">애니메이션 동작</button>
+    <img src="../images/[안전폴더]hero-20210303T054219Z-001/hero/image1.png">
+</body>
+</html>
